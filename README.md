@@ -1,2 +1,2 @@
-# iamifechi.github.io
-Current project
+# ATM-APP
+A web prototype of ATM Machines

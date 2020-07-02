@@ -1,0 +1,20 @@
+
+@font-face{
+    font-family:"Roboto";
+    src:'../fonts/roboto/Roboto-Regular.ttf'
+}
+
+@font-face{
+    font-family: "Montserrat";
+    src:'../fonts/Montserrat/Montserrat-Regular.tff'
+}
+
+@font-face{
+    font-family: "Edo";
+    src:'../fonts/Edo/edo.tff'
+}
+
+@font-face{
+    font-family: "league";
+    src:'../fonts/league-spartan/LeagueSpartan-Bold.otf'
+}
