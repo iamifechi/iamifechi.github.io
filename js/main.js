@@ -8,16 +8,37 @@
 
 
  function swap(sect,nextSect,transaction) {
-	 /* this.sect = sect;
+	 this.sect = sect;
 	 this.nextSect = nextSect;
-	 this.transaction = transaction; */
+	 this.transaction = transaction;
+
 	 
 	 if(sect == wbtn){
 		wbtn.style.marginTop="-9999px";
 		getPin.style.marginTop="0px";
+		var cancel = nextSect.getElementsByClassName("cancel");
+	 for(let i in cancel){
+		 cancel[i].addClass="shake"
+	 }
 	}
+	if(sect == welcome){
+		nextSect.getElementsByTagName("header")[0].classList.add("fadeIn");
+		sect.style.zIndex = "0";
+		nextSect.style.zIndex = "1";
+		var cancel = nextSect.getElementsByClassName("cancel");
+	 for(let i in cancel){
+		 cancel[i].addClass="shake"
+	 }
+		}
+		
+		sect.style.zIndex = "0";
+		nextSect.style.zIndex = "1";
+		var cancel = nextSect.getElementsByClassName("cancel");
+	 for(let i in cancel){
+ cancel[i].addClass="shake"}
 	
-	else if(transaction){
+	
+	/*else if(transaction){
 		let btns = nextSect.getElementsByTagName("a");
 		nextSect.style.zIndex = "1";
 		console.log(nextSect==selectAccount)//.getElementById("airtimeAmt"));
@@ -35,20 +56,13 @@
 				btns[j].style.color="red";
 			btns[j].removeEventListener("click", fn ,false)}
 	}},200); */
-			sect.style.zIndex = "0";
+			//sect.style.zIndex = "0";
 		
-	}
+	//}
 	
-	
-	else{
-		sect.style.zIndex = "0";
-		nextSect.style.zIndex = "1";
-		if(sect == welcome){
-		nextSect.getElementsByTagName("header")[0].classList.add("fadeIn");
-	}};
 		
-	
-};
+		
+	};
 
 
 
