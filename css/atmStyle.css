@@ -33,7 +33,7 @@ btn, button, label,a{
 
 .col-md-6.l a,.amt .btns-group .col-6.l a{
     float: left;
-    margin-left:-10%x;
+    margin-left:-10%;
 	background:rebeccapurple
 }
 
@@ -52,7 +52,16 @@ btn, button, label,a{
         margin: 10px auto;
         background:rebeccapurple
     }
+	
+	.amt .btns-group .col-6.l a{
+		margin:10px 0px auto -10%;
+	}
+	.amt .btns-group .col-6.r a{
+		margin:10px -10% auto 0px;
+	}
 }
+
+
 .btn{
 	width:300px;
     margin:20px auto;
@@ -60,9 +69,11 @@ btn, button, label,a{
     padding: 15px 70px;
 	text-align:center;
 }
+
 main {
     color:white;
 	background:black;
+	position:relative;
 }
 
 section{
@@ -74,16 +85,18 @@ section{
     flex-direction:column;
     justify-content: space-evenly;
     align-items: center;
+	text-align:center;
     background: rgb(0,8,80);
     background: -moz-linear-gradient(32deg, rgba(0,8,80,0.9360119047619048) 0%, rgba(9,61,125,1) 9%, rgba(110,46,158,1) 36%, rgba(160,45,159,1) 50%, rgba(120,44,162,1) 64%, rgba(9,61,125,1) 97%, rgba(0,8,81,0.9360119047619048) 100%);
     background: -webkit-linear-gradient(32deg, rgba(0,8,80,0.9360119047619048) 0%, rgba(9,61,125,1) 9%, rgba(110,46,158,1) 36%, rgba(160,45,159,1) 50%, rgba(120,44,162,1) 64%, rgba(9,61,125,1) 97%, rgba(0,8,81,0.9360119047619048) 100%);
     background: linear-gradient(32deg, rgba(0,8,80,0.9360119047619048) 0%, rgba(9,61,125,1) 9%, rgba(110,46,158,1) 36%, rgba(160,45,159,1) 50%, rgba(120,44,162,1) 64%, rgba(9,61,125,1) 97%, rgba(0,8,81,0.9360119047619048) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000850",endColorstr="#000851",GradientType=1);
 }
+
 @media (max-width:991px){
-	section{
+	/*section{
 		max-width:100%;
-	}
+	}*/
 }
 
 a{
@@ -96,7 +109,7 @@ section header, p{
     font-size: 1.8em;
     font-weight: bold;
     margin:auto;
-    max-width: 360px;
+    max-width: 280px;
 	text-align:center;
 }
 
@@ -141,59 +154,23 @@ h1{
 	margin-top:-9999px;
 }
 
-.btns-group{
-    justify-content: space-between;
-    width:100vw;
-    align-items: flex-start;
-}
+
 
 .sect-texts{
     position:absolute;
     top:15vh;
 }
 .options{
-    position: absolute;;
+    position: absolute;
     top:40vh;
-    display:flex;
-    
-}
-.btns-group #yes,.btns-group #no{
-    margin-top:40vh;
+	text-align:center;
 }
 
-@media(max-width:991px){
-    .btns-group #yes,.btns-group #no{
-        margin-top:10px;
-    }
-
-    .options{
-            width:100%;
-            position: relative;
-            text-align:center;
-            top:1%;
-           
-        }
-        
-    .options .amt{
-        position: absolute;
-        top:40vh;
-    }
-    
-    .btns-group{ 
-            margin:auto;
-        }
-
-   /* .amt .btns-group .col-6.l a{
-       margin-left:-40%
-    }*/
-    
-    .sect-texts{
-        position: relative;
-        top:15px;
-    }
-    
+.btns-group{
+    justify-content: space-between;
+    align-items: center;
+	margin:auto;
 }
-
 
 
 
