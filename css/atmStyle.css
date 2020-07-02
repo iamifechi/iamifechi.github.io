@@ -172,6 +172,10 @@ h1{
 	margin:auto;
 }
 
+.btns-group #yes,.btns-group #no{
+        margin-top:30%;
+    }
+
 
 
 
