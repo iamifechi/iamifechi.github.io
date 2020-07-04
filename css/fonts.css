@@ -1,20 +1,19 @@
-
 @font-face{
     font-family:"Roboto";
-    src:'../fonts/roboto/Roboto-Regular.ttf'
+    src:'../fonts/roboto/Roboto-Regular.ttf';
 }
 
 @font-face{
     font-family: "Montserrat";
-    src:'../fonts/Montserrat/Montserrat-Regular.tff'
+    src:'../fonts/Montserrat/Montserrat-Regular.ttf';
 }
 
 @font-face{
     font-family: "Edo";
-    src:'../fonts/Edo/edo.tff'
+    src:'..fonts/Edo/Edo.ttf';
 }
 
 @font-face{
-    font-family: "league";
-    src:'../fonts/league-spartan/LeagueSpartan-Bold.otf'
+    font-family: "Poiret One";
+    src:'..fonts/Poiret/PoiretOne-Regular.ttf';
 }

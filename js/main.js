@@ -15,7 +15,7 @@
 	 
 	 if(sect == wbtn){
 		wbtn.style.marginTop="-9999px";
-		getPin.style.marginTop="0px";
+		getPin.style.marginTop="-5%";
 		var cancel = nextSect.getElementsByClassName("cancel");
 	 for(let i in cancel){
 		 cancel[i].addClass="shake"
